@@ -31,7 +31,7 @@ function Profile() {
     <>
       <Navbar />
       <main className="main bg-dark">
-        <div className="header">
+        <div className={isEditing ? 'header header-editing' : 'header'}>
           {isEditing ? (
             <EditUserForm onClose={() => setIsEditing(false)} />
           ) : (

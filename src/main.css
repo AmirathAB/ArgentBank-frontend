@@ -314,3 +314,559 @@ body {
   color: #fff;
   font-weight: bold;
 }
+
+.edit-user-form {
+  background-color: white;
+  padding: 2rem 3rem;
+  color: #2c3e50;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.edit-user-form h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+.edit-user-fields {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.edit-field-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  gap: 1rem;
+}
+
+.edit-field-row label {
+  width: 100px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  flex-shrink: 0;
+}
+
+.edit-field-row input {
+  flex: 1;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  color: #999;
+}
+
+.edit-field-row input:not(:disabled) {
+  color: #2c3e50;
+}
+
+.edit-form-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.edit-button {
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  background-color: #00bc77;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.header-editing {
+  background-color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.main-nav-username {
+  color: #00bc77;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.main-nav-item .fa {
+  font-size: 1.2rem;
+}
+
+.main-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-nav-username {
+  color: #00bc77;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.main-nav-icon {
+  color: #00bc77;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.main-nav-icon:hover {
+  text-decoration: underline;
+}
+
+.account {
+  background-color: #3d3d3d !important;
+  border: none !important;
+  color: white !important;
+}
+
+.account-title {
+  color: white !important;
+}
+
+.account-amount {
+  color: white !important;
+}
+
+.account-amount-description {
+  color: white !important;
+}
+
+.transaction-button {
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  color: white !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1rem !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.main.bg-dark {
+  background-color: #12002b;
+}
+
+.header {
+  background-color: transparent;
+  padding: 2rem;
+}
+
+.main.bg-dark {
+  background-color: #ffffff !important;
+}
+
+.header {
+  background-color: #12002b;
+  padding: 2rem;
+  color: white;
+}
+
+.transaction-button {
+  display: block !important;
+  width: 200px !important;
+  padding: 10px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  background-color: #00bc77 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  margin-top: 0 !important;
+}
+
+.transaction-button:hover {
+  background-color: #009a63 !important;
+}
+
+.header {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+  padding: 2rem;
+}
+
+.header h1 {
+  color: #2c3e50 !important;
+}
+
+.transactions-main {
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.transaction-account {
+  background-color: #3d3d3d;
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.transaction-account-title {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.transaction-account-amount {
+  margin: 0.3rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.transaction-account-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.transaction-close-btn {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-table {
+  width: 100%;
+}
+
+.transaction-header-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 100px 100px 50px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 1px solid #ccc;
+}
+
+.transaction-item {
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 100px 100px 50px;
+  padding: 1rem;
+  background-color: #f0f9f4;
+  cursor: pointer;
+  align-items: center;
+}
+
+.transaction-row:hover {
+  background-color: #e0f5ea;
+}
+
+.t-date { color: #2c3e50; }
+.t-desc { color: #2c3e50; font-weight: 500; }
+.t-amount { color: #2c3e50; text-align: right; }
+.t-balance { color: #2c3e50; text-align: right; }
+.t-chevron { color: #2c3e50; text-align: center; font-size: 1.2rem; }
+
+.transaction-detail {
+  padding: 1rem 1rem 1rem 2rem;
+  background-color: #ffffff;
+}
+
+.transaction-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-label {
+  color: #888;
+  width: 150px;
+  font-size: 0.95rem;
+}
+
+.detail-value {
+  color: #00bc77;
+  font-size: 0.95rem;
+}
+
+.detail-editable {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edit-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.detail-editable input,
+.detail-editable select {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.transactions-main {
+  background-color: #ffffff !important;
+  padding: 2rem !important;
+  max-width: 950px !important;
+  margin: 0 auto !important;
+}
+
+.transaction-row {
+  background-color: #00bc77 !important;
+  color: #000000 !important;
+}
+
+.t-date, .t-desc, .t-amount, .t-balance, .t-chevron {
+  color: #000000 !important;
+}
+
+.transaction-header-row {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+.transaction-detail {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.detail-label {
+  color: #000000 !important;
+}
+
+.detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-row span,
+.transaction-row .t-date,
+.transaction-row .t-desc,
+.transaction-row .t-amount,
+.transaction-row .t-balance,
+.transaction-row .t-chevron {
+  color: #000000 !important;
+  font-weight: 500 !important;
+}
+
+.transaction-detail,
+.transaction-detail span,
+.transaction-detail .detail-label,
+.transaction-detail .detail-value,
+.transaction-detail-row span {
+  color: #000000 !important;
+}
+
+.transaction-detail .detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-header-row span {
+  color: #000000 !important;
+}
+
+.transaction-row span,
+.transaction-row .t-date,
+.transaction-row .t-desc,
+.transaction-row .t-amount,
+.transaction-row .t-balance,
+.transaction-row .t-chevron {
+  color: #ffffff !important;
+}
+
+.transaction-detail,
+.transaction-detail .detail-label,
+.transaction-detail-row span {
+  color: #ffffff !important;
+}
+
+.transaction-detail .detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-detail {
+  background-color: #ffffff !important;
+}
+
+.transaction-row {
+  background-color: #00bc77 !important;
+}
+
+.transaction-item {
+  border-bottom: 3px solid #ffffff !important;
+}
+
+.transaction-detail {
+  background-color: #ffffff !important;
+  padding: 1rem 1rem 1rem 2rem !important;
+  border: 1px solid #eee !important;
+}
+
+.transaction-detail .detail-label {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-detail .edit-icon-btn {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .transaction-detail-row {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+}
+
+.transaction-detail * {
+  background-color: transparent !important;
+}
+
+.transaction-detail {
+  background-color: #00bc77 !important;
+  padding: 1rem 1rem 1rem 2rem !important;
+}
+
+.transaction-detail .detail-label {
+  color: #ffffff !important;
+}
+
+.transaction-detail .detail-value {
+  color: #ffffff !important;
+}
+
+.transaction-detail .edit-icon-btn {
+  color: #ffffff !important;
+}
+
+.transaction-detail * {
+  background-color: transparent !important;
+}
+
+.transaction-item {
+  border-bottom: none !important;
+}
+
+.transaction-row {
+  margin-bottom: 2px !important;
+}
+
+.transaction-detail .detail-label,
+.transaction-detail .detail-value,
+.transaction-detail span {
+  color: #ffffff !important;
+}
+
+.transaction-detail {
+  background-color: #ffffff !important;
+  padding: 1rem 1rem 1rem 2rem !important;
+  border: 1px solid #eee !important;
+}
+
+.transaction-detail .detail-label {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-detail .edit-icon-btn {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .transaction-detail-row {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+}
+
+.transaction-detail * {
+  background-color: transparent !important;
+}
+
+.transaction-detail {
+  background-color: #ffffff !important;
+}
+
+.transaction-detail .detail-label {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-detail span {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-detail .edit-icon-btn {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail {
+  background-color: #00bc77 !important;
+}
+
+.transaction-detail .detail-label,
+.transaction-detail .detail-value,
+.transaction-detail span,
+.transaction-detail .edit-icon-btn i {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.transaction-detail {
+  background-color: #ffffff !important;
+  padding: 1rem 1rem 1rem 2rem !important;
+  border: 1px solid #eee !important;
+}
+
+.transaction-detail .detail-label {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .detail-value {
+  color: #00bc77 !important;
+}
+
+.transaction-detail .edit-icon-btn {
+  color: #2c3e50 !important;
+}
+
+.transaction-detail .transaction-detail-row {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+}
+
+.transaction-detail * {
+  background-color: transparent !important;
+}

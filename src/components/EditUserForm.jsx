@@ -21,9 +21,9 @@ function EditUserForm({ onClose }) {
   return (
     <div className="edit-user-form">
       <h2>Edit user info</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="input-wrapper">
-          <label htmlFor="userName">User name</label>
+      <div className="edit-user-fields">
+        <div className="edit-field-row">
+          <label htmlFor="userName">User name :</label>
           <input
             type="text"
             id="userName"
@@ -31,8 +31,8 @@ function EditUserForm({ onClose }) {
             onChange={(e) => setUserName(e.target.value)}
           />
         </div>
-        <div className="input-wrapper">
-          <label htmlFor="firstName">First name</label>
+        <div className="edit-field-row">
+          <label htmlFor="firstName">First name :</label>
           <input
             type="text"
             id="firstName"
@@ -40,8 +40,8 @@ function EditUserForm({ onClose }) {
             disabled
           />
         </div>
-        <div className="input-wrapper">
-          <label htmlFor="lastName">Last name</label>
+        <div className="edit-field-row">
+          <label htmlFor="lastName">Last name :</label>
           <input
             type="text"
             id="lastName"
@@ -49,12 +49,12 @@ function EditUserForm({ onClose }) {
             disabled
           />
         </div>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-        <div className="edit-form-buttons">
-          <button type="submit" className="edit-button">Save</button>
-          <button type="button" className="edit-button" onClick={onClose}>Cancel</button>
-        </div>
-      </form>
+      </div>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <div className="edit-form-buttons">
+        <button type="button" onClick={handleSubmit} className="edit-button">Save</button>
+        <button type="button" className="edit-button" onClick={onClose}>Cancel</button>
+      </div>
     </div>
   )
 }

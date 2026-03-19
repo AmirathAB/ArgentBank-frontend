@@ -20,15 +20,20 @@ function Navbar() {
         />
         <h1 className="sr-only">Argent Bank</h1>
       </Link>
-      <div>
+      <div className="main-nav-right">
         {isLoggedIn ? (
           <>
-            <Link className="main-nav-item" to="/profile">
-              <i className="fa fa-user-circle"></i>{' '}
+            <span className="main-nav-username">
               {user?.userName ?? '...'}
+            </span>
+            <Link className="main-nav-icon" to="/profile">
+              <i className="fa fa-user-circle"></i>
             </Link>
-            <Link className="main-nav-item" to="/" onClick={handleSignOut}>
-              <i className="fa fa-sign-out"></i> Sign Out
+            <Link className="main-nav-icon" to="/settings">
+              <i className="fa fa-cog"></i>
+            </Link>
+            <Link className="main-nav-icon" to="/" onClick={handleSignOut}>
+              <i className="fa fa-power-off"></i>
             </Link>
           </>
         ) : (
